@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<form action="cnt"> <!-- url 넣는 곳 : /cnt로 넘어감 -->
+		<div>
+			<label>"안녕 servlet" 몇번 듣고 싶으세요?</label>
+		</div>
+		<div>
+			<input type="text" name="cnt"> 
+			<!-- name의 cnt라고 할 때 화면에서 입력한  값이 ?cnt(key 값)의 value로 넘어옴 -->
+			<input type="submit" value="출력">
+			<!-- 출력 버튼을 누르면 서버로 전송된다.-->
+			<!-- 그 서버가 cnt url을 처리(파싱)해 줄 수 있는 CntServlet으로 요청이 넘어간다. -->
+			<!-- Servlet 클래스의 url을 기점으로 파싱해오는 것이다. -->
+		</div>
+	</form>
+</body>
+</html>
